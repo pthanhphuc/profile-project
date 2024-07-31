@@ -1,5 +1,8 @@
 import Navbar from "./components/Navbar";
 import Home from "./components/Home/Home";
+import About from "./components/About/About";
+import Projects from "./components/Projects/Projects";
+import Profile from "./components/Profile/Profile";
 import Footer from "./components/Footer";
 import {
   BrowserRouter as Router,
@@ -17,6 +20,9 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={ <Home /> } />
+          <Route path="/about" element={ <About /> } />
+          <Route path="/projects" element={ <Projects /> } />
+          <Route path="/profile" element={ <Profile /> } />
         </Routes>
         <Footer />
       </div>

@@ -7,8 +7,8 @@ import homeLogo from "../../Assets/home-main.svg";
 export default function Home() {
   return (
     <section>
-      <Container fluid className="home-section" id="Home">
-        <Particle />
+      <Particle />
+      <Container fluid className="home-section" id="Home">        
         <Container className="home-content">
           <Row>
             <Col md={7} className="home-header">
@@ -35,8 +35,7 @@ export default function Home() {
           </Row>
         </Container>
       </Container>   
-      {/* Need to fix    */}
-      {/* <IntroduceHome /> */}
+      <IntroduceHome />
     </section>
   );
 }

@@ -17,6 +17,12 @@ export default function NavBar() {
   const [expand, updateExpanded] = useState(false);
   const [navColor, updateNavColor] = useState(false);
 
+  function scrollHandler() {
+    updateNavColor(window.scrollY >= 20 ? true : false);
+  }
+
+  window.addEventListener("scroll", scrollHandler);
+
   return (
     <Navbar
       expanded={expand}
@@ -51,20 +57,14 @@ export default function NavBar() {
           </Nav.Item>
 
           <Nav.Item>
-            <Nav.Link as={Link} to="/project">
+            <Nav.Link as={Link} to="/projects">
               <AiOutlineFundProjectionScreen style={{ marginBottom: "2px" }} /> Project
             </Nav.Link>
           </Nav.Item>
 
           <Nav.Item>
-            <Nav.Link href="" target="_blank" rel="noreferrer">
-              <CgFileDocument style={{ marginBottom: "2px" }} /> Profile
-            </Nav.Link>
-          </Nav.Item>
-
-          <Nav.Item>
             <Nav.Link as={Link} to="/profile">
-              <ImBlog style={{ marginBottom: "2px" }} /> Blogs
+              <CgFileDocument style={{ marginBottom: "2px" }} /> Profile
             </Nav.Link>
           </Nav.Item>
 

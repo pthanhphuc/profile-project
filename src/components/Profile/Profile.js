@@ -10,7 +10,7 @@ export default function Profile() {
         <Row style={{ justifyContent: "center", position: "relative" }}>
 
           <Row className="profile">
-            <h1>This is cv(TODO)</h1>
+            <h1>This is cv(TODO1)</h1>
           </Row>
           <Button
             variant="primary"

@@ -8,10 +8,9 @@ import {
   AiOutlineHome,
   AiOutlineUser,
   AiFillStar,
-  AiOutlineFundProjectionScreen
+  // AiOutlineFundProjectionScreen
 } from "react-icons/ai";
 import { CgFileDocument, CgGitFork } from "react-icons/cg";
-import { ImBlog } from "react-icons/im";
 
 export default function NavBar() {
   const [expand, updateExpanded] = useState(false);
@@ -56,11 +55,12 @@ export default function NavBar() {
             </Nav.Link>
           </Nav.Item>
 
-          <Nav.Item>
+          {/* TODO */}
+          {/* <Nav.Item>
             <Nav.Link as={Link} to="/projects">
               <AiOutlineFundProjectionScreen style={{ marginBottom: "2px" }} /> Project
             </Nav.Link>
-          </Nav.Item>
+          </Nav.Item> */}
 
           <Nav.Item>
             <Nav.Link as={Link} to="/profile">

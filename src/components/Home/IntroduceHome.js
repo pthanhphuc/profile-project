@@ -14,8 +14,12 @@ export default function IntroduceHome() {
           </h1>
           <p className="home-about-body">
             I fell in love with programming and I want to become professional developer.
-            <br />I have experience with
-            <i className="purple"> C#, JavaScript, ReactJs.</i>
+            <br />
+            I have about over 2 years of experience in the backend develop.
+            <br />
+            I specialize in developing scalable and robust web applications using the <i className="purple"> .NET framework</i>,
+            <br />
+            primarily working with technologies such as <i className="purple">C#, JavaScript, VueJs, ASP.NET Core, and Entity Framework</i>.
           </p>
           </Col>
           <Col md={4} className="myAvatar">
